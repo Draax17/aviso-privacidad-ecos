@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso de Privacidad - Ecos de Liderazgo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            color: #718096;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #2d3748;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h2 i {
+            color: #667eea;
+        }
+
+        .section p {
+            color: #4a5568;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f7fafc, #edf2f7);
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .highlight-box h3 {
+            color: #2d3748;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .data-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .data-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .data-list li:last-child {
+            border-bottom: none;
+        }
+
+        .data-list i {
+            color: #667eea;
+            width: 20px;
+        }
+
+        .privacy-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .badge {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .footer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+            
+            .privacy-badges {
+                justify-content: center;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header fade-in">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+            </div>
+            <h1>Aviso de Privacidad</h1>
+            <p>Ecos de Liderazgo - Cursos de Inteligencia Artificial</p>
+        </div>
+
+        <div class="content fade-in">
+            <div class="section">
+                <h2><i class="fas fa-shield-alt"></i>Tu Privacidad es Nuestra Prioridad</h2>
+                <p>En <strong>Ecos de Liderazgo</strong>, valoramos profundamente tu privacidad y nos comprometemos a proteger tus datos personales. Este aviso de privacidad explica cómo recopilamos, utilizamos y protegemos tu información cuando interactúas con nuestro chatbot de WhatsApp.</p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-database"></i>Información que Recopilamos</h2>
+                <p>Recopilamos únicamente la información necesaria para brindarte la mejor experiencia:</p>
+                <ul class="data-list">
+                    <li><i class="fas fa-user"></i><strong>Datos de contacto:</strong> Número de teléfono y nombre</li>
+                    <li><i class="fas fa-comments"></i><strong>Preferencias de comunicación:</strong> Intereses en cursos específicos</li>
+                    <li><i class="fas fa-chart-line"></i><strong>Datos de interacción:</strong> Consultas y respuestas del chatbot</li>
+                    <li><i class="fas fa-clock"></i><strong>Información temporal:</strong> Horarios de contacto preferidos</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-cogs"></i>Cómo Utilizamos tu Información</h2>
+                <p>Utilizamos tu información exclusivamente para:</p>
+                <ul class="data-list">
+                    <li><i class="fas fa-graduation-cap"></i>Proporcionarte información sobre nuestros cursos de IA</li>
+                    <li><i class="fas fa-bullseye"></i>Personalizar las recomendaciones según tus intereses</li>
+                    <li><i class="fas fa-headset"></i>Brindarte soporte y atención personalizada</li>
+                    <li><i class="fas fa-envelope"></i>Enviarte contenido relevante y actualizaciones</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <h3><i class="fas fa-lock"></i>Protección de Datos</h3>
+                <p>Implementamos medidas de seguridad avanzadas para proteger tu información:</p>
+                <div class="privacy-badges">
+                    <span class="badge"><i class="fas fa-shield-alt"></i>Encriptación SSL</span>
+                    <span class="badge"><i class="fas fa-user-shield"></i>Acceso Restringido</span>
+                    <span class="badge"><i class="fas fa-database"></i>Almacenamiento Seguro</span>
+                    <span class="badge"><i class="fas fa-eye-slash"></i>Privacidad Garantizada</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-share-alt"></i>Compartir Información</h2>
+                <p><strong>Nunca compartimos, vendemos o alquilamos tu información personal</strong> con terceros. Solo utilizamos tus datos para los fines específicos mencionados en este aviso.</p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-calendar-alt"></i>Retención de Datos</h2>
+                <p>Conservamos tu información únicamente durante el tiempo necesario para cumplir con los propósitos establecidos o según lo requiera la ley aplicable.</p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-user-edit"></i>Tus Derechos</h2>
+                <p>Tienes derecho a:</p>
+                <ul class="data-list">
+                    <li><i class="fas fa-eye"></i>Acceder a tu información personal</li>
+                    <li><i class="fas fa-edit"></i>Corregir datos inexactos</li>
+                    <li><i class="fas fa-trash"></i>Solicitar la eliminación de tus datos</li>
+                    <li><i class="fas fa-ban"></i>Revocar tu consentimiento en cualquier momento</li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3><i class="fas fa-envelope"></i>¿Tienes Preguntas?</h3>
+                <p>Si tienes alguna pregunta sobre este aviso de privacidad o el manejo de tus datos, no dudes en contactarnos:</p>
+                <p><strong>Email:</strong> privacidad@ecosdeliderazgo.com</p>
+                <p><strong>WhatsApp:</strong> +52 1 55 1234 5678</p>
+            </div>
+        </div>
+
+        <div class="footer fade-in">
+            <p>&copy; 2024 Ecos de Liderazgo. Todos los derechos reservados.</p>
+            <p>Última actualización: Diciembre 2024</p>
+        </div>
+    </div>
+</body>
+</html> 
